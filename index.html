@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+    <link href='/font-awesome-4.7.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div id="main-container-div">
+        <div class="header">
+            <!--    
+           <div id="logo"> 
+            <h1>ScriBBler</h1>
+           </div>
+-->
+            <div id="logging-buttons">
+                <button id="sign-in" class="btn">Sign In</button>
+                <button id="sign-up" class="btn">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="postButtons">
+            <button id="all-post" class="post-btn">All Posts</button>
+            <button id="create-post" class="post-btn">Create Post</button>
+        </div>
+    </div>
+
+    <div id="signIn-modal">
+        <div id="signIn-header">
+            <h1 class="title">Welcome Back!</h1>
+            <span class="cancel">&times;</span>
+            <div class="line"></div>
+        </div>
+        <div id="signIn-body">
+            <form id="signIn-form" action="" method="">
+                <label class="input-fields">
+                    <span class="input-label">Username</span>
+                    <input class="input-area" type="text" placeholder="Enter Username" required>
+                </label>
+                <label class="input-fields">
+                    <span class="input-label">Password</span>
+                    <input class="input-area" type="password" placeholder="Enter Password" required>
+                </label>
+                <button id="signIn-button">Sign In</button>
+                <p class="not-member">Not a member?<a class="href"> Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="signUp-modal">
+        <div id="signUp-header">
+            <h1 class="title">Get Started</h1>
+            <span class="cancel">&times;</span>
+            <div class="line"></div>
+        </div>
+        <div id="signUp-body">
+            <form id="signUp-form" action="" method="">
+                <label class="input-fields">
+                    <span class="input-label">Full Name</span>
+                    <input class="input-area" type="text" placeholder="Enter Full Name" required>
+                </label>
+                <label class="input-fields">
+                    <span class="input-label">Username</span>
+                    <input class="input-area" type="text" placeholder="Enter Username" required>
+                </label>
+                <label class="input-fields">
+                    <span class="input-label">Password</span>
+                    <input class="input-area" type="password" placeholder="Enter Password" required>
+                </label>
+                <label class="input-fields">
+                    <span class="input-label">Confirm Password</span>
+                    <input class="input-area" type="password" placeholder="Confirm Password" required>
+                </label>
+                <button id="signUp-button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+
+        <!-- Insert code for Create Post modal here -->
+
+    </div>
+
+    <script src="js\header.js"></script>
+    <script src="js\index.js"></script>
+
+</body>
+
+</html>

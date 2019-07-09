@@ -1,0 +1,47 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+.postButtons{
+    position: absolute;
+    top:370px;
+    left:50%;
+    transform: translate(-50%);
+    outline: none;
+}
+
+.post-btn{
+    font-size: 16px;
+    font-weight: 900;
+    color: rgba(0,0,0,1);
+    background-color: goldenrod;
+    width: 110px;
+    height: 40px;
+    outline: none;
+    line-height: 1px;
+}
+
+.post-btn:hover{
+    cursor: pointer;
+}
+
+.post-btn:active{
+    background-color: darkgoldenrod;
+}
+
+#all-post{
+    width: 90px !important;
+    margin-right: 5px;
+}
+
+#create-post{
+    margin-left: 5px;
+}

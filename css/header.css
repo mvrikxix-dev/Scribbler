@@ -1,0 +1,217 @@
+/*
+#logo{
+    font-family: 'Cookie';
+    font-style: italic;
+    color: blue;
+    font-size: 30px;
+    display: inline;
+}
+*/
+
+#logging-buttons{
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    display: inline-block;
+}                                 
+
+.btn{
+    background-color: blue;
+    height: 40px;
+    width: 90px;
+    color: white;
+    margin-left: 6px;
+    font-size: 15.6px;
+    line-height: 1s;
+}
+
+#signUp-modal{
+    display: none;
+    height: 540px;
+    background-color: white;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+        z-index: 1;
+
+}
+
+.cancel{
+    font-weight: 900;
+    position: absolute;
+    right: 8px;
+    font-size: 35px;
+    color: rgba(0,0,0,0.4);
+}
+
+.cancel:hover{
+    cursor: pointer;
+    color: rgba(0,0,0,0.5);
+}
+
+.cancel:active{
+    color: rgba(0,0,0,0.7);
+}
+
+.title{
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    color: slategrey;
+}
+
+.line{
+    border-bottom: 4px solid rgba(0,0,0,0.1);
+    width: 430px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%);
+    outline: none;
+}
+
+#signUp-body{
+    width: 400px;
+    height: 480px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#signUp-form{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-label{
+    font-family: sans-serif;
+    color: gray;
+    font-size: 19px;
+}
+
+.input-area{
+    display: block;
+    height: 45px;
+    width: 380px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    text-indent: 14px;
+    border: 0;
+    padding-top: 4px;
+    background-color: rgba(0,0,0,0.1);
+    outline: none;
+}
+
+.input-area::placeholder{
+    font-size: 18px;
+}
+
+.input-area:focus{
+    background-color: rgba(0,0,0,0.3);
+}
+
+#signUp-button{
+    margin-top: 13px;
+    width: 380px;
+    border: 0;
+    height: 45px;
+    color: white;
+    background-color: #00b359;
+    font-size: 15px;
+    line-height: 2;
+}
+
+#signUp-button:hover{
+    cursor: pointer;
+    background-color: #00994d;
+}
+
+#signUp-button:active{
+    background-color: #006633;
+}
+
+#signIn-modal{
+    display: none;
+    height: 420px;
+    background-color: white;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    z-index: 1;
+}
+
+#signIn-body{
+    width: 400px;
+    height: 480px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#signIn-form{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#signIn-button{
+    margin-top: 13px;
+    width: 380px;
+    border: 0;
+    height: 45px;
+    color: white;
+    background-color: #00b359;
+    font-size: 15px;
+    line-height: 2;
+}
+
+#signIn-button:hover{
+    cursor: pointer;
+    background-color: #00994d;
+}
+
+#signIn-button:active{
+    background-color: #006633;
+}
+
+.not-member{
+    position: absolute;
+    left: 50%;
+    top: 243px;
+    transform: translate(-50%);
+    font-family: sans-serif;
+    font-weight: 900;
+    color: black;
+}
+
+.href{
+    color: blue;
+}
+
+.href:hover{
+    cursor: pointer;
+    color: darkblue;
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
