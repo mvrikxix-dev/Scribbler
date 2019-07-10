@@ -1,21 +1,36 @@
-/*
-#logo{
-    font-family: 'Cookie';
-    font-style: italic;
+#logo {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    font-family: 'Satisfy', 'Cursive';
     color: blue;
-    font-size: 30px;
+    font-size: 25px;
     display: inline;
 }
-*/
 
-#logging-buttons{
+#logo h1 {
+    margin: 0;
+}
+
+#tagline {
+    position: absolute;
+    top: 43px;
+    width: 170px;
+    left: 0px;
+    font-family: 'Marck Script';
+    color: black;
+    font-size: 17px;
+    display: inline;
+}
+
+#logging-buttons {
     position: absolute;
     top: 3px;
     right: 8px;
     display: inline-block;
-}                                 
+}
 
-.btn{
+.btn {
     background-color: blue;
     height: 40px;
     width: 90px;
@@ -25,7 +40,7 @@
     line-height: 1s;
 }
 
-#signUp-modal{
+#signUp-modal {
     display: none;
     height: 540px;
     background-color: white;
@@ -33,30 +48,30 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     outline: none;
-        z-index: 1;
+    z-index: 1;
 
 }
 
-.cancel{
+.cancel {
     font-weight: 900;
     position: absolute;
     right: 8px;
     font-size: 35px;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.4);
 }
 
-.cancel:hover{
+.cancel:hover {
     cursor: pointer;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.cancel:active{
-    color: rgba(0,0,0,0.7);
+.cancel:active {
+    color: rgba(0, 0, 0, 0.7);
 }
 
-.title{
+.title {
     position: absolute;
     top: 7px;
     left: 50%;
@@ -66,8 +81,8 @@
     color: slategrey;
 }
 
-.line{
-    border-bottom: 4px solid rgba(0,0,0,0.1);
+.line {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
     width: 430px;
     position: absolute;
     top: 80px;
@@ -76,7 +91,7 @@
     outline: none;
 }
 
-#signUp-body{
+#signUp-body {
     width: 400px;
     height: 480px;
     position: absolute;
@@ -85,20 +100,20 @@
     transform: translate(-50%);
 }
 
-#signUp-form{
+#signUp-form {
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translate(-50%);
 }
 
-.input-label{
+.input-label {
     font-family: sans-serif;
     color: gray;
     font-size: 19px;
 }
 
-.input-area{
+.input-area {
     display: block;
     height: 45px;
     width: 380px;
@@ -107,19 +122,19 @@
     text-indent: 14px;
     border: 0;
     padding-top: 4px;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     outline: none;
 }
 
-.input-area::placeholder{
+.input-area::placeholder {
     font-size: 18px;
 }
 
-.input-area:focus{
-    background-color: rgba(0,0,0,0.3);
+.input-area:focus {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-#signUp-button{
+#signUp-button {
     margin-top: 13px;
     width: 380px;
     border: 0;
@@ -130,16 +145,16 @@
     line-height: 2;
 }
 
-#signUp-button:hover{
+#signUp-button:hover {
     cursor: pointer;
     background-color: #00994d;
 }
 
-#signUp-button:active{
+#signUp-button:active {
     background-color: #006633;
 }
 
-#signIn-modal{
+#signIn-modal {
     display: none;
     height: 420px;
     background-color: white;
@@ -147,12 +162,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     outline: none;
     z-index: 1;
 }
 
-#signIn-body{
+#signIn-body {
     width: 400px;
     height: 480px;
     position: absolute;
@@ -161,14 +176,14 @@
     transform: translate(-50%);
 }
 
-#signIn-form{
+#signIn-form {
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translate(-50%);
 }
 
-#signIn-button{
+#signIn-button {
     margin-top: 13px;
     width: 380px;
     border: 0;
@@ -179,16 +194,16 @@
     line-height: 2;
 }
 
-#signIn-button:hover{
+#signIn-button:hover {
     cursor: pointer;
     background-color: #00994d;
 }
 
-#signIn-button:active{
+#signIn-button:active {
     background-color: #006633;
 }
 
-.not-member{
+.not-member {
     position: absolute;
     left: 50%;
     top: 243px;
@@ -198,20 +213,32 @@
     color: black;
 }
 
-.href{
+.href {
     color: blue;
 }
 
-.href:hover{
+.href:hover {
     cursor: pointer;
     color: darkblue;
 }
 
-.modal{
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,50%);    width: 500px;
+    transform: translate(-50%, 50%);
+    width: 500px;
     height: 500px;
+    z-index: 1;
+}
+
+#black-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
     z-index: 1;
 }

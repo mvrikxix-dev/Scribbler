@@ -2,122 +2,171 @@
 <html>
 
 <head>
-    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
     <link href='..\css\font.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
     </style>
 </head>
+
+
 <body>
+    <div id="black-screen"></div>
     <div id="main-container-div">
         <div class="header">
-                                
-            <!-- Insert code for Sign Up, Sign In button here. 
-                 Add code for "ScriBBler" heading and the sub-heading -->
-
-        </div>
-    </div>
-    <div>
-
-        <!-- Insert code for Sign In modal here -->
-
-    </div>
-
-    <div>
-
-        <!-- Insert code for Sign Up modal here -->
-
-    </div>
-
-    <div class="allPostsContainer">
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-            <!-- Insert code for Trash icon here -->
-
-            <p class="post-title">Hello there ! This is Post 1. </p>
-            <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-
-            <!-- Insert code for ... icon here -->
-
-        </div>
-    </div>
-
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-                <!-- Insert code for Trash icon here -->
-
-                <p class="post-title">Hello there ! This is Post 2. </p>
-                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-
-            
-            <!-- Insert code for ... icon here -->
-        </div>
-    </div>
-
-
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-            <!-- Insert code for Trash icon here -->
-
-                <p class="post-title">Hello there ! This is Post 3. </p>
-                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-
-            <!-- Insert code for ... icon here -->
-
-        </div>
-    </div>
-    <div class="post">
-        <div class="post-left">
-            <p class="post-username">Jimi</p>
-        </div>
-        <div class="post-content">
-
-            <!-- Insert code for Trash icon here -->
-
-                <p class="post-title">Hello there ! This is Post 4. </p>
-                <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-
-            <!-- Insert code for ... icon here -->
-
-        </div>
-    </div>
-    <div class="post">
-            <div class="post-left">
-                <p class="post-username">Jimi</p>
+            <div id="logo">
+                <h1>ScriBBler</h1>
+                <p id="tagline">Explore. Imagine. Create</p>
             </div>
-            <div class="post-content">
 
-                <!-- Insert code for Trash icon here -->
+            <div id="logging-buttons">
+                <button id="sign-in" class="btn">Sign In</button>
+                <button id="sign-up" class="btn">Sign Up</button>
+            </div>
+        </div>
+
+        <div id="signIn-modal">
+            <div id="signIn-header">
+                <h1 class="title">Welcome Back!</h1>
+                <span class="cancel">&times;</span>
+                <div class="line"></div>
+            </div>
+            <div id="signIn-body">
+                <form id="signIn-form" action="" method="">
+                    <label class="input-fields">
+                        <span class="input-label">Username</span>
+                        <input class="input-area" type="text" placeholder="Enter Username" required>
+                    </label>
+                    <label class="input-fields">
+                        <span class="input-label">Password</span>
+                        <input class="input-area" type="password" placeholder="Enter Password" required>
+                    </label>
+                    <button id="signIn-button">Sign In</button>
+                    <p class="not-member">Not a member?<a class="href"> Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+
+        <div id="signUp-modal">
+            <div id="signUp-header">
+                <h1 class="title">Get Started</h1>
+                <span class="cancel">&times;</span>
+                <div class="line"></div>
+            </div>
+            <div id="signUp-body">
+                <form id="signUp-form" action="" method="">
+                    <label class="input-fields">
+                        <span class="input-label">Full Name</span>
+                        <input class="input-area" type="text" placeholder="Enter Full Name" required>
+                    </label>
+                    <label class="input-fields">
+                        <span class="input-label">Username</span>
+                        <input class="input-area" type="text" placeholder="Enter Username" required>
+                    </label>
+                    <label class="input-fields">
+                        <span class="input-label">Password</span>
+                        <input class="input-area" type="password" placeholder="Enter Password" required>
+                    </label>
+                    <label class="input-fields">
+                        <span class="input-label">Confirm Password</span>
+                        <input class="input-area" type="password" placeholder="Confirm Password" required>
+                    </label>
+                    <button id="signUp-button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="allPostsContainer">
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                    <span class="trash"><i class="fa fa-trash" aria-hidden="true"></i></span>
+
+                    <p class="post-title">Hello there ! This is Post 1. </p>
+                    <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+
+                    <button class="post-more">...</button>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                    <span class="trash"><i class="fa fa-trash" aria-hidden="true"></i></span>
+
+                    <p class="post-title">Hello there ! This is Post 2. </p>
+                    <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+
+                    <button class="post-more">...</button>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                    <span class="trash"><i class="fa fa-trash" aria-hidden="true"></i></span>
+
+                    <p class="post-title">Hello there ! This is Post 3. </p>
+                    <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+
+                    <button class="post-more">...</button>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                    <span class="trash"><i class="fa fa-trash" aria-hidden="true"></i></span>
+
+                    <p class="post-title">Hello there ! This is Post 4. </p>
+                    <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
+
+                    <button class="post-more">...</button>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                    <span class="trash"><i class="fa fa-trash" aria-hidden="true"></i></span>
 
                     <p class="post-title">Hello there ! This is Post 5. </p>
                     <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
-                
-                <!-- Insert code for ... icon here -->
-            
+
+                    <button class="post-more">...</button>
+
+                </div>
             </div>
-        </div>
+            <div id="delete-modal">
 
-        <div>
+                <p id="delete-check">Are you sure you want to delete this post?</p>
+                <div id="delete-buttons">
+                    <button id="delete-yes" class="delete-btn">Yes</button>
+                    <button id="delete-no" class="delete-btn">No</button>
+                </div>
 
-            <!-- Insert code for delete modal here -->
-            
+            </div>
+
         </div>
-        
-</div>
-    <script src="..\js\bloglist.js">  </script>
+    </div>
+
+    <script src="..\js\bloglist.js"> </script>
     <script src="..\js\header.js"> </script>
 </body>
 
