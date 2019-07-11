@@ -11,9 +11,12 @@
 </head>
 
 <body>
+    <!-- Black screen with 85% opacity will be displayed when a Sign In or Sign Up modal shows up -->
     <div id="black-screen"></div>
 
+    <!-- 'main-container' div holds all the elements in index.html -->
     <div id="main-container-div">
+        <!-- 'header' div consists ScriBBler logo, tagline, sign up and sign in button -->
         <div class="header">
             <div id="logo">
                 <h1>ScriBBler</h1>
@@ -32,13 +35,16 @@
         </div>
     </div>
 
+    <!-- Code for Sign In modal -->
     <div id="signIn-modal">
+        <!-- Sign In modal: Header Code -->
         <div id="signIn-header">
             <h1 class="title">Welcome Back!</h1>
             <span class="cancel">&times;</span>
             <div class="line"></div>
         </div>
         <div id="signIn-body">
+            <!-- Sign In modal: Body Code -->
             <form id="signIn-form" action="" method="">
                 <label class="input-fields">
                     <span class="input-label">Username</span>
@@ -54,12 +60,15 @@
         </div>
     </div>
 
+    <!-- Code for Sign Up modal -->
     <div id="signUp-modal">
+        <!-- Sign Up modal: Header Code -->
         <div id="signUp-header">
             <h1 class="title">Get Started</h1>
             <span class="cancel">&times;</span>
             <div class="line"></div>
         </div>
+        <!-- Sign Up modal: Body Code -->
         <div id="signUp-body">
             <form id="signUp-form" action="" method="">
                 <label class="input-fields">
@@ -83,10 +92,20 @@
         </div>
     </div>
 
-    <div>
-
-        <!-- Insert code for Create Post modal here -->
-
+    <div id="createPost-modal">
+        <h1 id="createPost-heading">Create Your Post</h1>
+        <span class="cancel" id="cancel-id">&times;</span>
+        <form>
+            <label>
+                <span id="createPost-title">Title:</span>
+                <input id="createPost-titleBox" type="text" required>
+            </label>
+            <label>
+                <span id="createPost-content">Content:</span>
+                <textarea id="createPost-contentBox" required></textarea>
+            </label>
+            <button>Create</button>
+        </form>
     </div>
 
     <script src="js\header.js"></script>

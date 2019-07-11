@@ -2,12 +2,14 @@ var close = document.getElementsByClassName('cancel');
 var signupModal = document.getElementById('signUp-modal');
 var signinModal = document.getElementById('signIn-modal');
 var screen = document.getElementById('black-screen');
+var createPostModal = document.getElementById('createPost-modal');
 
 Array.from(close).forEach(function (i) {
     i.onclick = function () {
         signupModal.style.display = "none";
         signinModal.style.display = "none";
         screen.style.display = "none";
+        createPostModal.style.display="none";
     }
 });
 

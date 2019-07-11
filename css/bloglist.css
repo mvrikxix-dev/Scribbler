@@ -52,6 +52,7 @@
 }
 
 .post-more {
+    outline: none;
     border: 0;
     background-color: transparent;
     float: right;
