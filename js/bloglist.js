@@ -14,8 +14,8 @@ deleteNo.onclick = function () {
 }
 
 const postMore = document.getElementsByClassName('post-more');
-Array.from(postMore).forEach(function(i){
-    i.onclick = function(){
-        window.location.href="post.html";
+Array.from(postMore).forEach(function (i) {
+    i.onclick = function () {
+        window.location.href = "post.html";
     }
 });

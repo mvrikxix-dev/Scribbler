@@ -65,7 +65,7 @@
 
 .post-desc {
     margin-right: 30px;
-    padding-top: 25px; 
+    padding-top: 25px;
     position: relative;
     height: 70px;
     margin-bottom: 0 !important;
@@ -97,40 +97,40 @@ body {
     font-size: 23px;
 }
 
-#delete-modal{
+#delete-modal {
     display: none;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 450px;
     height: 150px;
     background-color: white;
     z-index: 1;
 }
 
-#delete-check{
+#delete-check {
     font-family: sans-serif;
     color: black;
     position: absolute;
     top: 20%;
     left: 53%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 350px;
     font-weight: 900;
 }
 
-#delete-buttons{
+#delete-buttons {
     position: absolute;
-    top:65%;
+    top: 65%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 450px;
     display: flex;
     justify-content: space-around;
 }
 
-.delete-btn{
+.delete-btn {
     height: 35px;
     width: 150px;
     border: 0;
@@ -139,26 +139,26 @@ body {
     outline: none;
 }
 
-#delete-no{
-    background-color: rgba(0,180,0,0.8);
+#delete-no {
+    background-color: rgba(0, 180, 0, 0.8);
 }
 
-#delete-yes{
-    background-color: rgba(255,0,0,0.8);
+#delete-yes {
+    background-color: rgba(255, 0, 0, 0.8);
 }
 
 #delete-no:hover {
-    background-color: rgba(0,180,0,0.9);
+    background-color: rgba(0, 180, 0, 0.9);
 }
 
 #delete-yes:hover {
-    background-color: rgba(255,0,0,0.9);
+    background-color: rgba(255, 0, 0, 0.9);
 }
 
-#delete-no:active{
-    background-color: rgba(0,180,0,1);
+#delete-no:active {
+    background-color: rgba(0, 180, 0, 1);
 }
 
-#delete-yes:active{
-    background-color: rgba(255,0,0,1);
+#delete-yes:active {
+    background-color: rgba(255, 0, 0, 1);
 }

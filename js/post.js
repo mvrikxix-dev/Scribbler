@@ -48,8 +48,6 @@ likeBtn.onclick = function () {
     likeBtn.style.backgroundColor = "rgba(255, 20, 147, 0.9)";
     likeBtn.textContent = "Liked";
     likes++;
-    console.log(likes);
-    likeBtn.setAttribute('disabled', '');
     if (likes === 1) {
         likeTag.textContent = likes + ' person likes this!';
     } else if (likes > 1) {
@@ -59,16 +57,22 @@ likeBtn.onclick = function () {
 
 const commentBtn = document.getElementById('comment-button');
 const commetnDta = document.getElementById('comment-box');
+const commentBox = document.querySelector('form');
 
-commentBtn.onclick = function(){
-    const commentContainer = document.createElement('div');
-    commentContainer.setAttribute('class', 'comments');
-    commentContainer.textContent = commetnDta.value;
-    console.log(commentContainer);
-    
-    const commentSec = document.getElementById('comment-storage');
-    commentSec.style.backgroundColor="gainsboro";
-    commentSec.appendChild(commentContainer);
-    
-    commetnDta.value="";
+commentBtn.onclick = function () {
+    if (commetnDta.value === "") {
+        alert('Comment field is empty!');
+    } else {
+        const commentContainer = document.createElement('div');
+        commentContainer.setAttribute('class', 'comments');
+        commentContainer.textContent = commetnDta.value;
+
+        const commentSec = document.getElementById('comment-storage');
+        commentSec.style.backgroundColor = "gainsboro";
+
+        commentSec.insertBefore(commentContainer, commentSec.firstChild);
+
+        commetnDta.value = "";
+
+    }
 }

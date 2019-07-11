@@ -8,7 +8,6 @@ Array.from(close).forEach(function (i) {
         signupModal.style.display = "none";
         signinModal.style.display = "none";
         screen.style.display = "none";
-
     }
 });
 
@@ -26,12 +25,10 @@ signupButton.onclick = function () {
     signinModal.style.display = "none";
     signupModal.style.display = "block";
     screen.style.display = "block";
-
 }
 
 signinButton.onclick = function () {
     signupModal.style.display = "none"
     signinModal.style.display = "block";
     screen.style.display = "block";
-
 }

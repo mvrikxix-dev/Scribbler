@@ -11,9 +11,13 @@
 </head>
 
 <body>
+    <!-- Black screen with 85% opacity will be displayed when a Sign In or Sign Up modal shows up -->
     <div id="black-screen"></div>
+
+    <!-- 'main-container' div holds all the elements in post.html -->
     <div id="main-container-div">
 
+        <!-- 'header' div consists ScriBBler logo, tagline, sign up and sign in button -->
         <div class="header">
             <div id="logo">
                 <h1>ScriBBler</h1>
@@ -26,12 +30,15 @@
             </div>
         </div>
 
+        <!-- Code for Sign In modal -->
         <div id="signIn-modal">
+            <!-- Sign In modal: Header Code -->
             <div id="signIn-header">
                 <h1 class="title">Welcome Back!</h1>
                 <span class="cancel">&times;</span>
                 <div class="line"></div>
             </div>
+            <!-- Sign In modal: Body Code -->
             <div id="signIn-body">
                 <form id="signIn-form" action="" method="">
                     <label class="input-fields">
@@ -48,12 +55,15 @@
             </div>
         </div>
 
+        <!-- Code for Sign Up modal -->
         <div id="signUp-modal">
+            <!-- Sign Up modal: Header Code -->
             <div id="signUp-header">
                 <h1 class="title">Get Started</h1>
                 <span class="cancel">&times;</span>
                 <div class="line"></div>
             </div>
+            <!-- Sign Up modal: Body Code -->
             <div id="signUp-body">
                 <form id="signUp-form" action="" method="">
                     <label class="input-fields">
@@ -77,13 +87,15 @@
             </div>
         </div>
 
+        <!-- 'blogContent' div contains all the elements of the blog -->
         <div class="blogContent">
+            <!-- Blog title code -->
             <div id="blogTitle" class="blogTitle">
                 <h contenteditable="false" id="blogTitleNew">The legacy of Jimi Hendrix</h>
             </div>
 
+            <!-- Blog author and edit/save button code -->
             <div class="blogAuthor">
-
                 <button id="edit" class='action'>
                     <div class="button-container">
                         <span id="text">Edit </span><i id="icon" class="fa  fa-pencil-square-o" aria-hidden="true"></i>
@@ -93,20 +105,26 @@
                 <p>Jimi</p>
             </div>
 
+            <!-- Blog content code -->
             <div class="blogText">
                 <p contenteditable="false" id="blogBody">
                     Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras — before Hendrix and after Hendrix."
                 </p>
             </div>
 
+            <!-- Like button code -->
             <div id="like-container">
                 <button id="like-button"><span id="like-text">Like</span></button>
                 <p id="like-tag">Be the first one to like this!</p>
             </div>
+
+            <!-- Comment field code -->
             <div id="comment-container">
-                <textarea id="comment-box" placeholder="Leave a comment..."></textarea>
-                <button id="comment-button">Comment</button>
+                <textarea id="comment-box" onfocus="this.placeholder=''" onblur="this.placeholder='Leave a comment...'" placeholder="Leave a comment..."></textarea>
+                <button type="button" id="comment-button">Comment</button>
             </div>
+
+            <!-- Comment display code -->
             <div id="comment-store">
                 <h1 id="all-comments">All Comments</h1>
                 <div id="comment-storage">
