@@ -8,12 +8,12 @@
     text-align: center;
 }
 
-#blogTitleNew{
+#blogTitleNew {
     width: 100%;
     padding: 0 5px;
 }
 
-#blogBody{
+#blogBody {
     width: 100%;
     min-height: 148px;
     padding: 5px;
@@ -60,7 +60,7 @@
     box-shadow: 0 0 7px -1px pink;
 }
 
-.button-container{
+.button-container {
     position: relative;
     left: -5px;
     width: 70px;
@@ -81,15 +81,15 @@
     line-height: 0.09;
 }
 
-#save #text{
-    left:8px !important;
+#save #text {
+    left: 8px !important;
 }
 
-#save #icon{
+#save #icon {
     line-height: 0 !important;
 }
 
-#like-button{
+#like-button {
     border: 0;
     color: white;
     background-color: rgba(255, 20, 147, 0.5);
@@ -101,64 +101,64 @@
     cursor: pointer;
 }
 
-#like-text{
+#like-text {
     line-height: 2.2;
 }
 
-#like-button:hover{
+#like-button:hover {
     background-color: rgba(255, 20, 147, 0.7);
 }
 
-#like-tag{
+#like-tag {
     padding-top: 5px;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
-#comment-box{
+#comment-box {
     margin-top: 20px;
     width: 740px;
     height: 150px;
 }
 
-#comment-button{
+#comment-button {
     position: relative;
     top: 30px;
     left: -750px;
     border: 0;
     color: white;
-    background-color: hotpink;
+    background-color: rgba(255, 0, 0, 0.6);
     font-size: 14px;
     width: 90px;
     height: 35px;
     outline: none;
     cursor: pointer;
-} 
-
-#comment-button:hover{
-    background-color: rgba(255, 20, 147, 0.7);
 }
 
-#comment-button:active{
-    background-color: rgba(255, 20, 147, 1);
+#comment-button:hover {
+    background-color: rgba(255, 0, 0, 0.7);
 }
 
-#all-comments{
+#comment-button:active {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+#all-comments {
     position: relative;
     top: 38px;
     font-size: 25px;
 }
 
-#comment-storage{
+#comment-storage {
     position: relative;
     top: 25px;
-    width: 730px; 
+    width: 730px;
     padding: 10px;
     margin-bottom: 20px;
 }
 
-.comments{
+.comments {
     position: relative;
     margin: 20px;
     min-height: 30px;

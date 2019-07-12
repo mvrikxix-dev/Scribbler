@@ -10,6 +10,9 @@ body {
     display: block;
 }
 
+
+/*Post Buttons: Common CSS for 'All Posts' and 'Create Post'*/
+
 .postButtons {
     position: absolute;
     top: 370px;
@@ -37,20 +40,28 @@ body {
     background-color: darkgoldenrod;
 }
 
+/*All Posts Button*/
+
 #all-post {
     width: 90px !important;
     margin-right: 5px;
 }
 
+/*Create Posts Button*/
+
 #create-post {
     margin-left: 5px;
 }
 
+/*Cancel button CSS for Create Post modal*/
+
 #cancel-id {
     position: absolute;
-    right: 30px;
-    top: 24px
+    right: 10px;
+    top: 1px;
 }
+
+/*Create Post Modal*/
 
 #createPost-modal {
     display: none;
@@ -61,8 +72,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
 }
+
+/*Create Post Modal: Heading*/
 
 #createPost-heading {
     position: absolute;
@@ -72,9 +84,12 @@ body {
     font-family: 'Josefin Sans';
 }
 
+/*Create Post Modal: Form*/
+
 #createPost-modal form {
     position: relative;
     top: 80px;
+    padding-right: 20px;
 }
 
 #createPost-modal label {
@@ -83,9 +98,14 @@ body {
     height: 100%;
 }
 
+/*Create Post Modal: Span*/
+
 #createPost-modal span {
     display: block;
+    font-family: sans-serif;
 }
+
+/*Create Post Modal: Textbox*/
 
 #createPost-titleBox {
     margin-top: 8px;
@@ -96,10 +116,7 @@ body {
     height: 30px;
 }
 
-#createPost-title,
-#createPost-content {
-    font-family: sans-serif;
-}
+/*Create Post Modal: Textarea*/
 
 #createPost-contentBox {
     padding: 10px;
@@ -111,6 +128,8 @@ body {
     min-height: 650px;
     height: 30px;
 }
+
+/*Create Post Modal: Create button*/
 
 #createPost-modal button {
     cursor: pointer;
